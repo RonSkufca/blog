@@ -6,9 +6,22 @@
     border-bottom: 1px solid $border-color-01;
     min-height: $spacing-unit * 1.865;
     line-height: $base-line-height * $base-font-size * 2.25;
-  
+    background-size: cover;
+    background: url('/assets/images/header.jpg') no-repeat center center;
+
     // Positioning context for the mobile navigation icon
     position: relative;
+  }
+
+  .masthead {
+    margin-bottom: 50px;
+    background: no-repeat center center;
+    background-color: #868e96;
+    background-attachment:  scroll;
+    position: relative;
+    background-size: cover;
+    background-image: url('../header.jpg');
+    height: 300px;
   }
   
   .site-title {
