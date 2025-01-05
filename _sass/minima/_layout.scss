@@ -8,7 +8,7 @@
     line-height: $base-line-height * $base-font-size * 7.25;
     background-size: cover;
 
-    @if $isProduction == 'production' {
+    @if $environment == 'production' {
       background-image: url('{{ site.baseurl }}/assets/images/header.jpg') no-repeat center center;
     } @else {
       background-image: url('/assets/images/header.jpg');
