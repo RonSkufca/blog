@@ -3,6 +3,7 @@
 // Define defaults for each variable.
 $baseurl: "{{ site.baseurl }}";
 $relativeurl: "{{ site.relativeurl }}";
+$isProduction: "{{ jekyll.environment }}";
 
 
 $base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif !default;

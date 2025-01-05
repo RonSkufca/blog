@@ -7,8 +7,12 @@
     min-height: $spacing-unit * 1.865;
     line-height: $base-line-height * $base-font-size * 7.25;
     background-size: cover;
-    background: url('/assets/images/header.jpg') no-repeat center center;
-    
+
+    @if $isProduction == 'production' {
+      background-image: url('{{ site.baseurl }}/assets/images/header.jpg') no-repeat center center;
+    } @else {
+      background-image: url('/assets/images/header.jpg');
+    }
 
     // Positioning context for the mobile navigation icon
     position: relative;
